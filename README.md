@@ -30,29 +30,29 @@
 
 The Unity 3D warehouse environment synchronizes live MQTT telemetry and applies the top-scoring GA-generated layout (`Best Score: 0.999091`), while the Streamlit dashboard streams real-time LSTM failure and conveyor fault predictions alongside live multi-sensor trends.
 
-![Unity 3D Digital Twin Running with Live MQTT Telemetry](./photos/unity_live_digital_twin.png)
+![Unity 3D Digital Twin Running with Live MQTT Telemetry](./output/Screenshots/unity_live_digital_twin.png)
 
-![Streamlit Real-Time AI Monitoring Dashboard](./photos/streamlit_dashboard.png)
+![Streamlit Real-Time AI Monitoring Dashboard](./output/Screenshots/streamlit_dashboard.png)
 
 ### 2. Automated CAD-to-Unity Warehouse Import
 
 Industrial CAD models (`STL`, `OBJ`, `DXF`, `DWG`, `DWT`, `DWS`) are automatically converted to FBX and imported into Unity to construct the base 3D warehouse shell before equipment placement.
 
-![Imported CAD Warehouse Exterior and Interior Views in Unity](./from%20ppt/Imported%20CAD%20Warehouse%20InsideOutside%20Views.png)
+![Imported CAD Warehouse Exterior and Interior Views in Unity](./output/Screenshots/Imported%20CAD%20Warehouse%20InsideOutside%20Views.png)
 
 ### 3. GA-Optimized Warehouse Layout
 
 The Genetic Algorithm evaluates candidate factory floor arrangements inside Unity physics/process simulations and converges on a collision-free, high-efficiency configuration linking cargo inlets, conveyors, robotic arms, and storage shelves.
 
-![Final GA-Optimized Warehouse Layout in Unity](./photos/ga_optimized_layout.png)
+![Final GA-Optimized Warehouse Layout in Unity](./output/Screenshots/ga_optimized_layout.png)
 
 ### 4. Output Demo Videos
 
 | Demonstration | What It Shows | Video |
 | :--- | :--- | :--- |
-| **Live Data with AI UI** | 1-second InfluxDB 3 → MQTT → Unity synchronization with live ML inference and Streamlit dashboard updates | [▶ Watch `Live data with UI.mp4`](./Live%20data%20with%20UI.mp4) |
-| **GA Layout Optimization** | Genetic Algorithm iteratively placing and scoring factory components inside Unity across generations | [▶ Watch `GA optimizing Layout.mp4`](./GA%20optimizing%20Layout.mp4) |
-| **Final Optimized Layout** | Converged warehouse layout rendered in Unity with active material handling | [▶ Watch `final output GA optimized Layout.mp4`](./final%20output%20GA%20optimized%20Layout.mp4) |
+| **Live Data with AI UI** | 1-second InfluxDB 3 → MQTT → Unity synchronization with live ML inference and Streamlit dashboard updates | [▶ Watch `Live data with UI.mp4`](./output/Screen%20Recording/Live%20data%20with%20UI.mp4) |
+| **GA Layout Optimization** | Genetic Algorithm iteratively placing and scoring factory components inside Unity across generations | [▶ Watch `GA optimizing Layout.mp4`](./output/Screen%20Recording/GA%20optimizing%20Layout.mp4) |
+| **Final Optimized Layout** | Converged warehouse layout rendered in Unity with active material handling | [▶ Watch `final output GA optimized Layout.mp4`](./output/Screen%20Recording/final%20output%20GA%20optimized%20Layout.mp4) |
 
 ---
 
@@ -87,11 +87,11 @@ flowchart LR
 
 ### CAD Ingestion, Telemetry & AI Pipelines
 
-![CAD to Unity FBX Conversion Architecture](./from%20ppt/CAD%20to%20Unity%20FBX%20Conversion%20Architecture.png)
+![CAD to Unity FBX Conversion Architecture](./output/Architectures/CAD%20to%20Unity%20FBX%20Conversion%20Architecture.png)
 
 | Live Data Ingestion (`InfluxDB 3 → MQTT → Unity`) | AI Prediction Loop (`Unity → MQTT → ML → Dashboard`) |
 | :---: | :---: |
-| ![Live Data to Unity Pipeline](./live%20data%20to%20unity.png) | ![Unity to Dashboard AI Pipeline](./Unity%20to%20dashboad.png) |
+| ![Live Data to Unity Pipeline](./output/Architectures/live%20data%20to%20unity.png) | ![Unity to Dashboard AI Pipeline](./output/Architectures/Unity%20to%20dashboad.png) |
 
 ### System Components
 
@@ -157,7 +157,7 @@ Trained on **1,209 operational records** (`Speed`, `Load`, `Temperature`, `Vibra
 
 | Random Forest Confusion Matrix | XGBoost Confusion Matrix |
 | :---: | :---: |
-| ![Random Forest Confusion Matrix](./Conveyor%20belt%20Random%20forest%20confusion%20matrix.png) | ![XGBoost Confusion Matrix](./Conveyor%20belt%20XGBoost%20confusion%20matrix.png) |
+| ![Random Forest Confusion Matrix](./output/Confusion%20Matrix/Conveyor%20belt%20Random%20forest%20confusion%20matrix.png) | ![XGBoost Confusion Matrix](./output/Confusion%20Matrix/Conveyor%20belt%20XGBoost%20confusion%20matrix.png) |
 
 ---
 
