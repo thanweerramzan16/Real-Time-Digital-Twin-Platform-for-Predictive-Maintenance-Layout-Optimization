@@ -157,7 +157,7 @@ Trained on **1,209 operational records** (`Speed`, `Load`, `Temperature`, `Vibra
 
 | Random Forest Confusion Matrix | XGBoost Confusion Matrix |
 | :---: | :---: |
-| ![Random Forest Confusion Matrix](./output/Confusion%20Matrix/Conveyor%20belt%20Random%20forest%20confusion%20matrix.png) | ![XGBoost Confusion Matrix](./output/Confusion%20Matrix/Conveyor%20belt%20XGBoost%20confusion%20matrix.png) |
+| ![Random Forest Confusion Matrix](./output/Confusion%20matrix/Conveyor%20belt%20Random%20forest%20confusion%20matrix.png) | ![XGBoost Confusion Matrix](./output/Confusion%20matrix/Conveyor%20belt%20XGBoost%20confusion%20matrix.png) |
 
 ---
 
